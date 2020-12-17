@@ -21,6 +21,7 @@ body {
 
 /* The footer is positioned at the bottom of the page */
 .footer {
+  margin-top: 25px;
   position: absolute;
   right: 0;
   bottom: 0;

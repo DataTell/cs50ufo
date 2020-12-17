@@ -1,1 +1,1 @@
-# cs50ufo
+# CS50 - Final Project

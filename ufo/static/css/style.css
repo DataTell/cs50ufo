@@ -132,7 +132,6 @@ label {
 
 .form-control {
   border: 2px solid transparent;
-  text-align: center;
   border-radius: 25px;
 }
 
@@ -244,6 +243,7 @@ td {
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #8e979f94;
+  text-align: center;
 }
 
 .form-control::-moz-placeholder {

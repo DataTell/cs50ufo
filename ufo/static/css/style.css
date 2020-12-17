@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(245, 245, 245);
+}
+
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 130px;
+  overflow: auto;
+}
+
+/* The footer is positioned at the bottom of the page */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100px;
+  background: rgb(245, 245, 245);
+}
+
+/* The code styles the text at the bottom of the footer */
+.footer > .bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background: #000000;
+  font-size: 25px;
+}
+
+#footcolor {
+  color: rgba(255, 255, 255, 0.557);
+}
+
+/* Navigation bar style */
+.navbar {
+  padding: 5px;
+  margin: 0px;
+  background: rgb(0, 0, 0) !important;
+  border-color: black;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* nav {
+  width: 100%;
+  width: 70px;
+  background-color: #000 !important;
+} */
+
+/* This CSS styles the ufo icon in the navbar */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.nav-ufo {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  width: 35px;
+  background-color: #000;
+  animation: 8s fadeIn;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.2,0.05,1,.5);
+  animation-iteration-count: infinite;
+}
+
+/* Adding styles to the aside and filter form */
+.ufo-form {
+  margin-top: 500px;
+}
+
+.filters .panel-body {
+  padding: 0;
+}
+
+.filters {
+  margin-top: 35px;
+  box-shadow: 0 7px 18px -5px black;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  color: #0d0d0e;
+  outline: none;
+}
+
+.panel-default>.panel-heading {
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(46, 45, 45);
+  font-family: 'Oswald', sans-serif;
+  background-color: #ddd;
+}
+
+.panel-body {
+  font-size: 35px;
+  text-align: center;
+  color: rgb(46, 45, 45);
+  border: 3px solid #ddd;
+  background-color: #ddd;
+}
+
+label {
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.list-group-item {
+  background-color:  rgb(245, 245, 245);
+}
+
+.form-control {
+  border: 2px solid transparent;
+  border-radius: 25px;
+}
+
+/* Button */
+.btn-default {
+  color: rgb(46, 45, 45);
+  background-color: #ddd;
+  border-color: rgb(215, 211, 211);;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button {
+  text-decoration: none;
+  transition-duration: 0.7s;
+}
+
+.btn-default:hover {
+  background-color: rgb(136, 135, 135);
+  color: white;
+  text-decoration: none;
+}
+
+#filter-btn {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/* Table */
+#table-area th {
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
+  color: rgb(46, 45, 45);
+  background-color: #ddd;
+  border-bottom: 2px solid #ddd;
+  font-family: 'Oswald', sans-serif;
+}
+
+#table-area th:first-child,
+#table-area th:nth-child(2),
+#table-area th:nth-child(6) {
+  min-width: 70px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #86a5c4;
+}
+
+table {
+  border: 3px solid #ddd;
+  width: 100%;
+}
+
+td {
+  padding: 15px;
+  font-size: 15px;
+  color: rgb(46, 45, 45);
+  border-bottom: 1px solid #ddd;
+  font-family: 'Oswald', sans-serif;
+}
+
+.loader {
+  margin-top: 50px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+/* The styles for the parallax */
+.hero {
+  position: relative;
+  height: 800px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/fermi-paradox.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.hero h1 {
+  opacity: 0;
+  margin-top: 500px;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  vertical-align: bottom;
+  font-stretch: extra-expanded;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.728);
+  animation: title 5s forwards linear;
+  animation-delay: .5s;
+}
+
+.hero-chevron {
+  font-size: 50px;
+  opacity: 0;
+  margin-top: 15px;
+  margin-left: 66px;
+  animation: chevron 5s forwards linear;
+  animation-delay: 1.2s;
+}
+
+/* Input placeholder color changes */
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8e979f94;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8e979f94;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8e979f94;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8e979f94;
+}
+
+/* Media queries which will only be activated at specific screen sizes */
+@media (max-width: 800px) {
+  #table-area td {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  #table-area thead {
+    display: none;
+  }
+
+  #table-area tr td:first-child {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: #1b3146;
+  }
+
+  #table-area tr td:last-child {
+    margin-bottom: 20px;
+  }
+
+  #table-area tr td:last-child::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    content: " ";
+    background: aliceblue;
+  }
+
+  #table-area td {
+    font-size: 1.25em;
+  }
+
+  #table-area tbody td {
+    display: block;
+    text-align: center;
+  }
+
+  #table-area tbody td::before {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    content: attr(data-th);
+  }
+
+  .hero h1 {
+    opacity: 0;
+    vertical-align: bottom;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.728);
+    animation: smaller-title 5s forwards linear;
+    animation-delay: 1s;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .hero h1 {
+    font-size: 110px;
+    margin-top: 760px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 45px;
+    margin-top: 480px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .hero-chevron {
+    font-size: 85px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-chevron {
+    font-size: 45px;
+    margin-left: 36px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .hero {
+    height: 1285px;
+  }
+}
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  /* to {font-size: 6.5rem; opacity: 1;} */
+}
+
+@keyframes smaller-title {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  /* to {font-size: 5.5rem; opacity: 1;} */
+}
+
+@keyframes chevron {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

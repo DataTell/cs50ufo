@@ -127,6 +127,7 @@ label {
 .form-control {
   border: 2px solid transparent;
   border-radius: 25px;
+  text-align: center;
 }
 
 /* Button */
